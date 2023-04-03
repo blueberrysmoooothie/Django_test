@@ -1,7 +1,12 @@
 from django.shortcuts import render
-from .models import MyModel
+from django.http import HttpResponse
+# from .models import MyModel
 
-def my_view(request):
-    queryset = MyModel.objects.all()
-    context = {'queryset': queryset}
-    return render(request, 'my_template.html', context)
+
+# def my_view(request):
+#     queryset = MyModel.objects.all()
+#     context = {'queryset': queryset}
+#     return render(request, 'my_template.html', context)
+
+def index(request):
+    return HttpResponse("Hello, world.")
