@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-with open('.\myFirstDjango\SECRET_KEY.txt') as a:
+with open('.\myFirstDjango\myFirstDjango\SECRET_KEY.txt') as a:
     t = a.readline()
 SECRET_KEY = t
 
